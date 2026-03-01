@@ -1,16 +1,19 @@
 package main
-import  (
+import (
 	"fmt"
 )
-func sums(nums ... int) int{
+
+func sum(nums  ...int) int{
 	total := 0
 	for _, v := range nums{
 		total += v
 	}
-	return  total
+	return total
 }
 
 func main(){
-	results := sums(1, 3, 4)
+	results := sum(1, 2, 3, 4)
 	fmt.Println(results)
 }
+
+
