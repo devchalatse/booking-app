@@ -1,10 +1,16 @@
 package main
-import "fmt"
+import  (
+	"fmt"
+)
+func sums(nums ... int) int{
+	total := 0
+	for _, v := range nums{
+		total += v
+	}
+	return  total
+}
 
 func main(){
-	var conferenceName = "Go Conference"
-	const conferenceTickets = 50
-	fmt.Println("Welcome to", conferenceName, "booking application")
-	fmt.Println("Get your tickets to attend")
-	
+	results := sums(1, 3, 4)
+	fmt.Println(results)
 }
